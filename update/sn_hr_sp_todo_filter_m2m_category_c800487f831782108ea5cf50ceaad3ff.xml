@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_hr_sp_todo_filter_m2m_category">
+    <sn_hr_sp_todo_filter_m2m_category action="INSERT_OR_UPDATE">
+        <category display_value="Task type">b3be465819e11110f877eae01ea84704</category>
+        <filter display_value="Catalog task">b32e73eb831782108ea5cf50ceaad3ce</filter>
+        <order>100</order>
+        <sys_class_name>sn_hr_sp_todo_filter_m2m_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 09:29:02</sys_created_on>
+        <sys_id>c800487f831782108ea5cf50ceaad3ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sn_hr_sp_todo_filter_m2m_category_c800487f831782108ea5cf50ceaad3ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 09:29:02</sys_updated_on>
+    </sn_hr_sp_todo_filter_m2m_category>
+</record_update>

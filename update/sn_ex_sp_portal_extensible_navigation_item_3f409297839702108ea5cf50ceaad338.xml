@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sn_ex_sp_portal_extensible_navigation_item">
+    <sn_ex_sp_portal_extensible_navigation_item action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <browse_button>false</browse_button>
+        <browse_button_text/>
+        <menu/>
+        <menu_title>Salesforce</menu_title>
+        <navigation_item_type>topic</navigation_item_type>
+        <order>99999</order>
+        <parent_item display_value="CIT">c840f5db83d302108ea5cf50ceaad3a0</parent_item>
+        <portal_extensible_navigation display_value="Employee Center">5a8cfeff776031105d6a39bd1e5a9988</portal_extensible_navigation>
+        <position>left</position>
+        <render_as>menu</render_as>
+        <submenu_type>standard</submenu_type>
+        <sys_class_name>sn_ex_sp_portal_extensible_navigation_item</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-15 06:42:30</sys_created_on>
+        <sys_id>3f409297839702108ea5cf50ceaad338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Salesforce</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sn_ex_sp_portal_extensible_navigation_item_3f409297839702108ea5cf50ceaad338</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-15 06:42:30</sys_updated_on>
+        <topic display_value="Salesforce">31e4b553831702108ea5cf50ceaad379</topic>
+        <widget/>
+        <widget_parameters/>
+    </sn_ex_sp_portal_extensible_navigation_item>
+</record_update>

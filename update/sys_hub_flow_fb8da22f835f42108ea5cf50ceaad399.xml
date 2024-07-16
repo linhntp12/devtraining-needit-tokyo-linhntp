@@ -1,0 +1,3121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=11426000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority/>
+        <generation_source/>
+        <internal_name>salesforce_voucher_request</internal_name>
+        <label_cache>[{"name":"69dd185c-0b77-4523-8073-f038f2e455fb.Record","label":"9 - Look Up Record➛Consumable Record","reference":"alm_consumable","reference_display":"Consumable","type":"reference","base_type":"reference","usedInstances":{"0d9087e0-031f-4b2f-9d81-7cb8e179d061":["consumable"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.requested_for","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"requested_for","usedInstances":{"35c38b4c-b3c6-4119-8037-4672b7e36190":["assigned_to"]}},{"name":"Service Catalog_1.request_item.request","label":"Trigger - Service Catalog➛Requested Item Record➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request","usedInstances":{"a4a73257-87e5-4382-a67d-c05592606588":["request"],"0d9087e0-031f-4b2f-9d81-7cb8e179d061":["request"],"386c65a1-8f3a-475c-be32-5b6363e2477b":["record"],"c6060ff2-282f-4872-b06c-b0b6072a7511":["request"]}},{"name":"fbe0bd66-2061-42f7-a006-4b44d0ec0e76.Record","label":"3 - Look Up Record➛Consumable Record","reference":"alm_consumable","reference_display":"Consumable","type":"reference","base_type":"reference","usedInstances":{"8c457770-ffdd-464d-b03f-db12eff1b382":["condition"],"a4a73257-87e5-4382-a67d-c05592606588":["consumable"],"4968e9cf-210c-4e86-8ae7-ff4ab0930342":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef240acc-a608-4adb-85f2-fb19412750b5.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"a21a8a03-538c-42e7-a08c-0fe62017f930":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.requested_for.department.dept_head","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛Department➛Department head","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"cmn_department","column_name":"dept_head","usedInstances":{"ef240acc-a608-4adb-85f2-fb19412750b5":["approval_conditions"],"35c38b4c-b3c6-4119-8037-4672b7e36190":["assigned_to"],"e9608e04-85d4-47b8-8cce-3fdc133922dc":["assigned_to"]}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"ef240acc-a608-4adb-85f2-fb19412750b5":["record"],"a4a73257-87e5-4382-a67d-c05592606588":["requested_item"],"35c38b4c-b3c6-4119-8037-4672b7e36190":["ah_requested_item"],"0d9087e0-031f-4b2f-9d81-7cb8e179d061":["requested_item"],"4e1bde59-b3b3-4bd6-92bf-e75bd126b5be":["record"],"e9608e04-85d4-47b8-8cce-3fdc133922dc":["ah_requested_item"],"c6060ff2-282f-4872-b06c-b0b6072a7511":["requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"45895a7f-b1f5-4178-b6a3-7b3759c44d9a.Record","label":"9 - Look Up Record➛Consumable Record","reference":"alm_consumable","reference_display":"Consumable","type":"reference","base_type":"reference","usedInstances":{"c6060ff2-282f-4872-b06c-b0b6072a7511":["consumable"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>e01e76a383df42108ea5cf50ceaad31e</master_snapshot>
+        <name>Salesforce voucher request</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>911eb6a383df42108ea5cf50ceaad34d</remote_trigger_id>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:28:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fb8da22f835f42108ea5cf50ceaad399</sys_id>
+        <sys_mod_count>77</sys_mod_count>
+        <sys_name>Salesforce voucher request</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_hub_flow_fb8da22f835f42108ea5cf50ceaad399</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:23</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=fb8da22f835f42108ea5cf50ceaad399"/>
+    <sys_variable_value action="delete_multiple" query="document_key=fb8da22f835f42108ea5cf50ceaad399"/>
+    <sys_flow_catalog_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_item/>
+        <name/>
+        <run_flow_in/>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>911eb6a383df42108ea5cf50ceaad34d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:22</sys_updated_on>
+    </sys_flow_catalog_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=fb8da22f835f42108ea5cf50ceaad399"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=fb8da22f835f42108ea5cf50ceaad399^sys_idNOT IN8a9d222f835f42108ea5cf50ceaad347"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:28:56</sys_created_on>
+        <sys_id>8a9d222f835f42108ea5cf50ceaad347</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:22</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8a9d222f835f42108ea5cf50ceaad347"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=fb8da22f835f42108ea5cf50ceaad399"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=fb8da22f835f42108ea5cf50ceaad399^sys_idNOT IN3b8da22f835f42108ea5cf50ceaad39a"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>fb8da22f835f42108ea5cf50ceaad399</id>
+        <name>Salesforce voucher request</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:28:47</sys_created_on>
+        <sys_id>3b8da22f835f42108ea5cf50ceaad39a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:28:47</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=3b8da22f835f42108ea5cf50ceaad39a"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=fb8da22f835f42108ea5cf50ceaad399^sys_idNOT IN2f0ef2a383df42108ea5cf50ceaad3dc,af0ef2a383df42108ea5cf50ceaad3e0"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</model>
+        <model_id>fb8da22f835f42108ea5cf50ceaad399</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_fb8da22f835f42108ea5cf50ceaad399</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:51</sys_created_on>
+        <sys_id>2f0ef2a383df42108ea5cf50ceaad3dc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2f0ef2a383df42108ea5cf50ceaad3dc"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</model>
+        <model_id>fb8da22f835f42108ea5cf50ceaad399</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_fb8da22f835f42108ea5cf50ceaad399</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:51</sys_created_on>
+        <sys_id>af0ef2a383df42108ea5cf50ceaad3e0</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:22</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=af0ef2a383df42108ea5cf50ceaad3e0"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=fb8da22f835f42108ea5cf50ceaad399"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fb8da22f835f42108ea5cf50ceaad399"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=fb8da22f835f42108ea5cf50ceaad399^sys_idNOT IN03cd7e6383df42108ea5cf50ceaad334,09369ba3835382108ea5cf50ceaad3dc,157dbeef839f42108ea5cf50ceaad30e,4985dbef831382108ea5cf50ceaad328,85ce662f835f42108ea5cf50ceaad3ff,fdadeeeb835f42108ea5cf50ceaad394"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <generation_source/>
+        <order>14</order>
+        <parent_ui_id>766559ae-e05f-427f-b4bb-cac025021617</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:39:43</sys_created_on>
+        <sys_id>03cd7e6383df42108ea5cf50ceaad334</sys_id>
+        <sys_mod_count>26</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>ntplinh25</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:48:21</sys_updated_on>
+        <ui_id>386c65a1-8f3a-475c-be32-5b6363e2477b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=03cd7e6383df42108ea5cf50ceaad334"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>03cd7e6383df42108ea5cf50ceaad334</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:52</sys_created_on>
+        <sys_id>b70e36a383df42108ea5cf50ceaad354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:52</sys_updated_on>
+        <value>sc_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>03cd7e6383df42108ea5cf50ceaad334</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:52</sys_created_on>
+        <sys_id>f30e36a383df42108ea5cf50ceaad354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:52</sys_updated_on>
+        <value>state=7</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=03cd7e6383df42108ea5cf50ceaad334"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>03cd7e6383df42108ea5cf50ceaad334</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:52</sys_created_on>
+        <sys_id>730e36a383df42108ea5cf50ceaad354</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>03cd7e6383df42108ea5cf50ceaad334</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:52</sys_created_on>
+        <sys_id>fb0e36a383df42108ea5cf50ceaad353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>03cd7e6383df42108ea5cf50ceaad334</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:52</sys_created_on>
+        <sys_id>bf0e36a383df42108ea5cf50ceaad353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:52</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=03cd7e6383df42108ea5cf50ceaad334"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=03cd7e6383df42108ea5cf50ceaad334"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>4968e9cf-210c-4e86-8ae7-ff4ab0930342</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:26:21</sys_created_on>
+        <sys_id>09369ba3835382108ea5cf50ceaad3dc</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>ntplinh25</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:48:21</sys_updated_on>
+        <ui_id>45895a7f-b1f5-4178-b6a3-7b3759c44d9a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=09369ba3835382108ea5cf50ceaad3dc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>09369ba3835382108ea5cf50ceaad3dc</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:35:00</sys_created_on>
+        <sys_id>7f2897a7835382108ea5cf50ceaad3fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:35:00</sys_updated_on>
+        <value>alm_consumable</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>09369ba3835382108ea5cf50ceaad3dc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:35:00</sys_created_on>
+        <sys_id>bb2897a7835382108ea5cf50ceaad3fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:35:00</sys_updated_on>
+        <value>model=6bef0fe7837ac2108ea5cf50ceaad3e9^install_status=6^substatus=available</value>
+        <variable display_value="Conditions">d509f99587003300663ca1bb36cb0ba9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3^id=09369ba3835382108ea5cf50ceaad3dc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=09369ba3835382108ea5cf50ceaad3dc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=09369ba3835382108ea5cf50ceaad3dc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>766559ae-e05f-427f-b4bb-cac025021617</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:38:14</sys_created_on>
+        <sys_id>157dbeef839f42108ea5cf50ceaad30e</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>ntplinh25</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:48:21</sys_updated_on>
+        <ui_id>4e1bde59-b3b3-4bd6-92bf-e75bd126b5be</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=157dbeef839f42108ea5cf50ceaad30e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>157dbeef839f42108ea5cf50ceaad30e</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:36</sys_created_on>
+        <sys_id>3bfd32a383df42108ea5cf50ceaad3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:36</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>157dbeef839f42108ea5cf50ceaad30e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:36</sys_created_on>
+        <sys_id>77fd32a383df42108ea5cf50ceaad3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:36</sys_updated_on>
+        <value>state=7</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=157dbeef839f42108ea5cf50ceaad30e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>157dbeef839f42108ea5cf50ceaad30e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:36</sys_created_on>
+        <sys_id>f3fd32a383df42108ea5cf50ceaad3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>157dbeef839f42108ea5cf50ceaad30e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:36</sys_created_on>
+        <sys_id>7ffd32a383df42108ea5cf50ceaad3e6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>157dbeef839f42108ea5cf50ceaad30e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:36</sys_created_on>
+        <sys_id>33fd32a383df42108ea5cf50ceaad3e7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:36</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=157dbeef839f42108ea5cf50ceaad30e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=157dbeef839f42108ea5cf50ceaad30e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
+        <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>4968e9cf-210c-4e86-8ae7-ff4ab0930342</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:23:21</sys_created_on>
+        <sys_id>4985dbef831382108ea5cf50ceaad328</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>ntplinh25</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:48:21</sys_updated_on>
+        <ui_id>e9608e04-85d4-47b8-8cce-3fdc133922dc</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4985dbef831382108ea5cf50ceaad328"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4985dbef831382108ea5cf50ceaad328</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:35:00</sys_created_on>
+        <sys_id>332897a7835382108ea5cf50ceaad3eb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:35:00</sys_updated_on>
+        <value>There are no Salesforce certification exam vouchers available for assignment to the requester. Please add vouchers from the consumables list screen in the asset function.</value>
+        <variable display_value="Short Description">3751fd0e73141300612c273ffff6a7a6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4985dbef831382108ea5cf50ceaad328"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_fields</field>
+        <id>4985dbef831382108ea5cf50ceaad328</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:35:00</sys_created_on>
+        <sys_id>bf2897a7835382108ea5cf50ceaad3ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:35:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>assigned_to={{Service Catalog_1.request_item.requested_for.department.dept_head}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_requested_item</field>
+        <id>4985dbef831382108ea5cf50ceaad328</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:35:00</sys_created_on>
+        <sys_id>fb2897a7835382108ea5cf50ceaad3ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:35:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_short_description</field>
+        <id>4985dbef831382108ea5cf50ceaad328</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:35:00</sys_created_on>
+        <sys_id>372897a7835382108ea5cf50ceaad3ea</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:35:00</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4985dbef831382108ea5cf50ceaad328"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4985dbef831382108ea5cf50ceaad328"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>a21a8a03-538c-42e7-a08c-0fe62017f930</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:34:03</sys_created_on>
+        <sys_id>85ce662f835f42108ea5cf50ceaad3ff</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>ntplinh25</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:48:21</sys_updated_on>
+        <ui_id>fbe0bd66-2061-42f7-a006-4b44d0ec0e76</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=85ce662f835f42108ea5cf50ceaad3ff"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>85ce662f835f42108ea5cf50ceaad3ff</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:35:11</sys_created_on>
+        <sys_id>210fa26f835f42108ea5cf50ceaad36c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:35:11</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>85ce662f835f42108ea5cf50ceaad3ff</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:35:11</sys_created_on>
+        <sys_id>a50fa26f835f42108ea5cf50ceaad36c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:35:11</sys_updated_on>
+        <value>alm_consumable</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>85ce662f835f42108ea5cf50ceaad3ff</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:35:11</sys_created_on>
+        <sys_id>e10fa26f835f42108ea5cf50ceaad36c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:35:11</sys_updated_on>
+        <value>model=6bef0fe7837ac2108ea5cf50ceaad3e9^install_status=6^substatus=available</value>
+        <variable display_value="Conditions">d509f99587003300663ca1bb36cb0ba9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3^id=85ce662f835f42108ea5cf50ceaad3ff"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=85ce662f835f42108ea5cf50ceaad3ff"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=85ce662f835f42108ea5cf50ceaad3ff"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:29:11</sys_created_on>
+        <sys_id>fdadeeeb835f42108ea5cf50ceaad394</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>ntplinh25</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:48:21</sys_updated_on>
+        <ui_id>ef240acc-a608-4adb-85f2-fb19412750b5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fdadeeeb835f42108ea5cf50ceaad394"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fdadeeeb835f42108ea5cf50ceaad394</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:32:40</sys_created_on>
+        <sys_id>347e626f835f42108ea5cf50ceaad397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:32:40</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fdadeeeb835f42108ea5cf50ceaad394</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:32:40</sys_created_on>
+        <sys_id>707e626f835f42108ea5cf50ceaad397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:32:40</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fdadeeeb835f42108ea5cf50ceaad394</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:32:40</sys_created_on>
+        <sys_id>b87e626f835f42108ea5cf50ceaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:32:40</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fdadeeeb835f42108ea5cf50ceaad394</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:32:40</sys_created_on>
+        <sys_id>f47e626f835f42108ea5cf50ceaad397</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:32:40</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fdadeeeb835f42108ea5cf50ceaad394"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>fdadeeeb835f42108ea5cf50ceaad394</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:32:40</sys_created_on>
+        <sys_id>747e626f835f42108ea5cf50ceaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:32:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyU[{{Service Catalog_1.request_item.requested_for.department.dept_head}}]OrRejectsAnyU[{{Service Catalog_1.request_item.requested_for.department.dept_head}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>fdadeeeb835f42108ea5cf50ceaad394</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:32:40</sys_created_on>
+        <sys_id>747e626f835f42108ea5cf50ceaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:32:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>fdadeeeb835f42108ea5cf50ceaad394</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:32:40</sys_created_on>
+        <sys_id>b07e626f835f42108ea5cf50ceaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:32:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>fdadeeeb835f42108ea5cf50ceaad394</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:32:40</sys_created_on>
+        <sys_id>3c7e626f835f42108ea5cf50ceaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:32:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>fdadeeeb835f42108ea5cf50ceaad394</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:32:40</sys_created_on>
+        <sys_id>fc7e626f835f42108ea5cf50ceaad395</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:32:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>fdadeeeb835f42108ea5cf50ceaad394</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:32:40</sys_created_on>
+        <sys_id>387e626f835f42108ea5cf50ceaad396</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:32:40</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fdadeeeb835f42108ea5cf50ceaad394"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fdadeeeb835f42108ea5cf50ceaad394"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=fb8da22f835f42108ea5cf50ceaad399^sys_idNOT IN8413b6e3839f42108ea5cf50ceaad38a,b32897a7835382108ea5cf50ceaad3fb"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <order>5</order>
+        <parent_ui_id>8c457770-ffdd-464d-b03f-db12eff1b382</parent_ui_id>
+        <subflow display_value="Consume saleforce voucher">6d19a2a7835f42108ea5cf50ceaad37a</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:52:49</sys_created_on>
+        <sys_id>8413b6e3839f42108ea5cf50ceaad38a</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:23</sys_updated_on>
+        <ui_id>a4a73257-87e5-4382-a67d-c05592606588</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=8413b6e3839f42108ea5cf50ceaad38a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>8413b6e3839f42108ea5cf50ceaad38a</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:52:50</sys_created_on>
+        <sys_id>1413b6e3839f42108ea5cf50ceaad3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:52:50</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">8c13b6e3839f42108ea5cf50ceaad38b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8413b6e3839f42108ea5cf50ceaad38a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>consumable</field>
+        <id>8413b6e3839f42108ea5cf50ceaad38a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:05:52</sys_created_on>
+        <sys_id>d70632e7839f42108ea5cf50ceaad3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:05:52</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6d19a2a7835f42108ea5cf50ceaad37a</table>
+        <value>{{fbe0bd66-2061-42f7-a006-4b44d0ec0e76.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request</field>
+        <id>8413b6e3839f42108ea5cf50ceaad38a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:05:52</sys_created_on>
+        <sys_id>170632e7839f42108ea5cf50ceaad3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:05:52</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6d19a2a7835f42108ea5cf50ceaad37a</table>
+        <value>{{Service Catalog_1.request_item.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>8413b6e3839f42108ea5cf50ceaad38a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:05:52</sys_created_on>
+        <sys_id>9b0632e7839f42108ea5cf50ceaad3b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:05:52</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6d19a2a7835f42108ea5cf50ceaad37a</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>8413b6e3839f42108ea5cf50ceaad38a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:52:50</sys_created_on>
+        <sys_id>9013b6e3839f42108ea5cf50ceaad3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:52:50</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_8413b6e3839f42108ea5cf50ceaad38a</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_8413b6e3839f42108ea5cf50ceaad38a^id=8413b6e3839f42108ea5cf50ceaad38a"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=8413b6e3839f42108ea5cf50ceaad38a^sys_idNOT IN8c13b6e3839f42108ea5cf50ceaad38b"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">8413b6e3839f42108ea5cf50ceaad38a</model>
+        <model_id>8413b6e3839f42108ea5cf50ceaad38a</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_8413b6e3839f42108ea5cf50ceaad38a</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:52:49</sys_created_on>
+        <sys_id>8c13b6e3839f42108ea5cf50ceaad38b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8413b6e3839f42108ea5cf50ceaad38a"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <order>10</order>
+        <parent_ui_id>4968e9cf-210c-4e86-8ae7-ff4ab0930342</parent_ui_id>
+        <subflow display_value="Consume saleforce voucher">6d19a2a7835f42108ea5cf50ceaad37a</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:35:00</sys_created_on>
+        <sys_id>b32897a7835382108ea5cf50ceaad3fb</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:23</sys_updated_on>
+        <ui_id>c6060ff2-282f-4872-b06c-b0b6072a7511</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b32897a7835382108ea5cf50ceaad3fb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>b32897a7835382108ea5cf50ceaad3fb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:35:01</sys_created_on>
+        <sys_id>b328d7a7835382108ea5cf50ceaad318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:35:01</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">732897a7835382108ea5cf50ceaad3fc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b32897a7835382108ea5cf50ceaad3fb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>consumable</field>
+        <id>b32897a7835382108ea5cf50ceaad3fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:35:01</sys_created_on>
+        <sys_id>f328d7a7835382108ea5cf50ceaad317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:35:01</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6d19a2a7835f42108ea5cf50ceaad37a</table>
+        <value>{{45895a7f-b1f5-4178-b6a3-7b3759c44d9a.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request</field>
+        <id>b32897a7835382108ea5cf50ceaad3fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:35:01</sys_created_on>
+        <sys_id>3328d7a7835382108ea5cf50ceaad317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:35:01</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6d19a2a7835f42108ea5cf50ceaad37a</table>
+        <value>{{Service Catalog_1.request_item.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>b32897a7835382108ea5cf50ceaad3fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:35:01</sys_created_on>
+        <sys_id>b728d7a7835382108ea5cf50ceaad317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:35:01</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6d19a2a7835f42108ea5cf50ceaad37a</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>b32897a7835382108ea5cf50ceaad3fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:35:01</sys_created_on>
+        <sys_id>3328d7a7835382108ea5cf50ceaad318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:35:01</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_b32897a7835382108ea5cf50ceaad3fb</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_b32897a7835382108ea5cf50ceaad3fb^id=b32897a7835382108ea5cf50ceaad3fb"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=b32897a7835382108ea5cf50ceaad3fb^sys_idNOT IN732897a7835382108ea5cf50ceaad3fc"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">b32897a7835382108ea5cf50ceaad3fb</model>
+        <model_id>b32897a7835382108ea5cf50ceaad3fb</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_b32897a7835382108ea5cf50ceaad3fb</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:35:00</sys_created_on>
+        <sys_id>732897a7835382108ea5cf50ceaad3fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:35:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b32897a7835382108ea5cf50ceaad3fb"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=fb8da22f835f42108ea5cf50ceaad399^sys_idNOT IN0326faa7839f42108ea5cf50ceaad3ee,1d2f6e6f835f42108ea5cf50ceaad327,818ea22f835f42108ea5cf50ceaad3c7,975dba2383df42108ea5cf50ceaad306,a519dbe7835382108ea5cf50ceaad306,d1fd3e6383df42108ea5cf50ceaad3e0,d5455363835382108ea5cf50ceaad3bd"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f70e36a383df42108ea5cf50ceaad322</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>8c457770-ffdd-464d-b03f-db12eff1b382</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:06:24</sys_created_on>
+        <sys_id>0326faa7839f42108ea5cf50ceaad3ee</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:23</sys_updated_on>
+        <ui_id>78daa35a-ebd6-4799-8cb0-96381b3290c2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=0326faa7839f42108ea5cf50ceaad3ee"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=0326faa7839f42108ea5cf50ceaad3ee"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0326faa7839f42108ea5cf50ceaad3ee"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7b0ef2a383df42108ea5cf50ceaad3f6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a21a8a03-538c-42e7-a08c-0fe62017f930</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:35:43</sys_created_on>
+        <sys_id>1d2f6e6f835f42108ea5cf50ceaad327</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:22</sys_updated_on>
+        <ui_id>8c457770-ffdd-464d-b03f-db12eff1b382</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=1d2f6e6f835f42108ea5cf50ceaad327"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>1d2f6e6f835f42108ea5cf50ceaad327</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:52:49</sys_created_on>
+        <sys_id>c013b6e3839f42108ea5cf50ceaad38a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:52:49</sys_updated_on>
+        <value>Having voucher</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=1d2f6e6f835f42108ea5cf50ceaad327"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>1d2f6e6f835f42108ea5cf50ceaad327</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:52:49</sys_created_on>
+        <sys_id>4013b6e3839f42108ea5cf50ceaad38a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:52:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{fbe0bd66-2061-42f7-a006-4b44d0ec0e76.Record}}ISNOTEMPTY</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>1d2f6e6f835f42108ea5cf50ceaad327</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:52:49</sys_created_on>
+        <sys_id>8c13b6e3839f42108ea5cf50ceaad389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:52:49</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=1d2f6e6f835f42108ea5cf50ceaad327"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1d2f6e6f835f42108ea5cf50ceaad327"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">770ef2a383df42108ea5cf50ceaad3ef</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:32:57</sys_created_on>
+        <sys_id>818ea22f835f42108ea5cf50ceaad3c7</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:22</sys_updated_on>
+        <ui_id>a21a8a03-538c-42e7-a08c-0fe62017f930</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=818ea22f835f42108ea5cf50ceaad3c7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>818ea22f835f42108ea5cf50ceaad3c7</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:34:03</sys_created_on>
+        <sys_id>c5ce6e6f835f42108ea5cf50ceaad333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:34:03</sys_updated_on>
+        <value>Yes approval</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=818ea22f835f42108ea5cf50ceaad3c7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>818ea22f835f42108ea5cf50ceaad3c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:34:03</sys_created_on>
+        <sys_id>45ce6e6f835f42108ea5cf50ceaad333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:34:03</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ef240acc-a608-4adb-85f2-fb19412750b5.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>818ea22f835f42108ea5cf50ceaad3c7</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 03:34:03</sys_created_on>
+        <sys_id>81ce6e6f835f42108ea5cf50ceaad333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 03:34:03</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=818ea22f835f42108ea5cf50ceaad3c7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=818ea22f835f42108ea5cf50ceaad3c7"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b70e36a383df42108ea5cf50ceaad34e</block>
+        <comment/>
+        <connected_to>a21a8a03-538c-42e7-a08c-0fe62017f930</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:37:50</sys_created_on>
+        <sys_id>975dba2383df42108ea5cf50ceaad306</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:23</sys_updated_on>
+        <ui_id>766559ae-e05f-427f-b4bb-cac025021617</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=975dba2383df42108ea5cf50ceaad306"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=975dba2383df42108ea5cf50ceaad306"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=975dba2383df42108ea5cf50ceaad306"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e919dbe7835382108ea5cf50ceaad305</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>4968e9cf-210c-4e86-8ae7-ff4ab0930342</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:38:57</sys_created_on>
+        <sys_id>a519dbe7835382108ea5cf50ceaad306</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:23</sys_updated_on>
+        <ui_id>a199f42f-708a-43f1-aff0-dd9bc0a44c0e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a519dbe7835382108ea5cf50ceaad306"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a519dbe7835382108ea5cf50ceaad306"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a519dbe7835382108ea5cf50ceaad306"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3b0e36a383df42108ea5cf50ceaad356</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>766559ae-e05f-427f-b4bb-cac025021617</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:25</sys_created_on>
+        <sys_id>d1fd3e6383df42108ea5cf50ceaad3e0</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:23</sys_updated_on>
+        <ui_id>7a3b454f-7760-4f29-9b90-29a77cab7569</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d1fd3e6383df42108ea5cf50ceaad3e0"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d1fd3e6383df42108ea5cf50ceaad3e0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d1fd3e6383df42108ea5cf50ceaad3e0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f72897a7835382108ea5cf50ceaad3e4</block>
+        <comment/>
+        <connected_to>8c457770-ffdd-464d-b03f-db12eff1b382</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a21a8a03-538c-42e7-a08c-0fe62017f930</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:22:17</sys_created_on>
+        <sys_id>d5455363835382108ea5cf50ceaad3bd</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:23</sys_updated_on>
+        <ui_id>4968e9cf-210c-4e86-8ae7-ff4ab0930342</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=d5455363835382108ea5cf50ceaad3bd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>d5455363835382108ea5cf50ceaad3bd</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:22:48</sys_created_on>
+        <sys_id>45655763835382108ea5cf50ceaad364</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:22:48</sys_updated_on>
+        <value>Not having voucher</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=d5455363835382108ea5cf50ceaad3bd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>d5455363835382108ea5cf50ceaad3bd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:22:48</sys_created_on>
+        <sys_id>c1655763835382108ea5cf50ceaad364</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:22:48</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{fbe0bd66-2061-42f7-a006-4b44d0ec0e76.Record}}ISEMPTY</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>d5455363835382108ea5cf50ceaad3bd</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:22:48</sys_created_on>
+        <sys_id>0d655763835382108ea5cf50ceaad363</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:22:48</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=d5455363835382108ea5cf50ceaad3bd"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d5455363835382108ea5cf50ceaad3bd"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=fb8da22f835f42108ea5cf50ceaad399"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=fb8da22f835f42108ea5cf50ceaad399"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_fb8da22f835f42108ea5cf50ceaad399^sys_idNOT IN270ef2a383df42108ea5cf50ceaad3e5,af0ef2a383df42108ea5cf50ceaad3df"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fb8da22f835f42108ea5cf50ceaad399</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:51</sys_created_on>
+        <sys_id>270ef2a383df42108ea5cf50ceaad3e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_fb8da22f835f42108ea5cf50ceaad399</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:51</sys_created_on>
+        <sys_id>af0ef2a383df42108ea5cf50ceaad3df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:51</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_fb8da22f835f42108ea5cf50ceaad399"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_fb8da22f835f42108ea5cf50ceaad399"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_fb8da22f835f42108ea5cf50ceaad399"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>25000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>salesforce_voucher_request</internal_name>
+        <label_cache>[{"name":"69dd185c-0b77-4523-8073-f038f2e455fb.Record","label":"9 - Look Up Record➛Consumable Record","reference":"alm_consumable","reference_display":"Consumable","type":"reference","base_type":"reference","usedInstances":{"0d9087e0-031f-4b2f-9d81-7cb8e179d061":["consumable"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.requested_for","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"requested_for","usedInstances":{"35c38b4c-b3c6-4119-8037-4672b7e36190":["assigned_to"]}},{"name":"Service Catalog_1.request_item.request","label":"Trigger - Service Catalog➛Requested Item Record➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request","usedInstances":{"a4a73257-87e5-4382-a67d-c05592606588":["request"],"0d9087e0-031f-4b2f-9d81-7cb8e179d061":["request"],"386c65a1-8f3a-475c-be32-5b6363e2477b":["record"],"c6060ff2-282f-4872-b06c-b0b6072a7511":["request"]}},{"name":"fbe0bd66-2061-42f7-a006-4b44d0ec0e76.Record","label":"3 - Look Up Record➛Consumable Record","reference":"alm_consumable","reference_display":"Consumable","type":"reference","base_type":"reference","usedInstances":{"8c457770-ffdd-464d-b03f-db12eff1b382":["condition"],"a4a73257-87e5-4382-a67d-c05592606588":["consumable"],"4968e9cf-210c-4e86-8ae7-ff4ab0930342":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ef240acc-a608-4adb-85f2-fb19412750b5.approval_state","label":"1 - Ask For Approval➛Approval State","reference_display":"Approval State","type":"choice","base_type":"choice","choices":[{"label":"-- None --","value":"","order":0.0},{"label":"Not Yet Requested","value":"not requested","order":1.0},{"label":"Requested","value":"requested","order":2.0},{"label":"Approved","value":"approved","order":3.0},{"label":"Rejected","value":"rejected","order":4.0},{"label":"Cancelled","value":"cancelled","order":5.0},{"label":"No Longer Required","value":"not_required","order":6.0},{"label":"Skipped","value":"skipped","order":7.0}],"usedInstances":{"a21a8a03-538c-42e7-a08c-0fe62017f930":["condition"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.requested_for.department.dept_head","label":"Trigger - Service Catalog➛Requested Item Record➛Requested for➛Department➛Department head","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"cmn_department","column_name":"dept_head","usedInstances":{"ef240acc-a608-4adb-85f2-fb19412750b5":["approval_conditions"],"35c38b4c-b3c6-4119-8037-4672b7e36190":["assigned_to"],"e9608e04-85d4-47b8-8cce-3fdc133922dc":["assigned_to"]}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","usedInstances":{"ef240acc-a608-4adb-85f2-fb19412750b5":["record"],"a4a73257-87e5-4382-a67d-c05592606588":["requested_item"],"35c38b4c-b3c6-4119-8037-4672b7e36190":["ah_requested_item"],"0d9087e0-031f-4b2f-9d81-7cb8e179d061":["requested_item"],"4e1bde59-b3b3-4bd6-92bf-e75bd126b5be":["record"],"e9608e04-85d4-47b8-8cce-3fdc133922dc":["ah_requested_item"],"c6060ff2-282f-4872-b06c-b0b6072a7511":["requested_item"]},"attributes":{"default_search_field":"number"}},{"name":"45895a7f-b1f5-4178-b6a3-7b3759c44d9a.Record","label":"9 - Look Up Record➛Consumable Record","reference":"alm_consumable","reference_display":"Consumable","type":"reference","base_type":"reference","usedInstances":{"c6060ff2-282f-4872-b06c-b0b6072a7511":["consumable"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Salesforce voucher request</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Salesforce voucher request">fb8da22f835f42108ea5cf50ceaad399</parent_flow>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e01e76a383df42108ea5cf50ceaad31e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:20</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=e01e76a383df42108ea5cf50ceaad31e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e01e76a383df42108ea5cf50ceaad31e"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=e01e76a383df42108ea5cf50ceaad31e^sys_idNOT INf81e76a383df42108ea5cf50ceaad3ac"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>f81e76a383df42108ea5cf50ceaad3ac</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:22</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f81e76a383df42108ea5cf50ceaad3ac"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e01e76a383df42108ea5cf50ceaad31e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e01e76a383df42108ea5cf50ceaad31e^sys_idNOT INa01e76a383df42108ea5cf50ceaad31f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e01e76a383df42108ea5cf50ceaad31e</id>
+        <name>Salesforce voucher request</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>a01e76a383df42108ea5cf50ceaad31f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:55</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=a01e76a383df42108ea5cf50ceaad31f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e01e76a383df42108ea5cf50ceaad31e^sys_idNOT INa41e76a383df42108ea5cf50ceaad320,e41e76a383df42108ea5cf50ceaad337"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</model>
+        <model_id>e01e76a383df42108ea5cf50ceaad31e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e01e76a383df42108ea5cf50ceaad31e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>a41e76a383df42108ea5cf50ceaad320</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a41e76a383df42108ea5cf50ceaad320"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</model>
+        <model_id>e01e76a383df42108ea5cf50ceaad31e</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_e01e76a383df42108ea5cf50ceaad31e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>e41e76a383df42108ea5cf50ceaad337</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e41e76a383df42108ea5cf50ceaad337"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e01e76a383df42108ea5cf50ceaad31e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e01e76a383df42108ea5cf50ceaad31e"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=e01e76a383df42108ea5cf50ceaad31e^sys_idNOT IN2e29dfe7835382108ea5cf50ceaad329,301e76a383df42108ea5cf50ceaad36d,781e76a383df42108ea5cf50ceaad3a4,a229dfe7835382108ea5cf50ceaad342,b81e76a383df42108ea5cf50ceaad386,f81e76a383df42108ea5cf50ceaad3aa"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Catalog Task">af51fd0e73141300612c273ffff6a785</action_type>
+        <action_type_parent display_value="Create Catalog Task">f597c41073081300612c273ffff6a767</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <generation_source/>
+        <order>8</order>
+        <parent_ui_id>4968e9cf-210c-4e86-8ae7-ff4ab0930342</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:17</sys_created_on>
+        <sys_id>2e29dfe7835382108ea5cf50ceaad329</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <ui_id>e9608e04-85d4-47b8-8cce-3fdc133922dc</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2e29dfe7835382108ea5cf50ceaad329"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>2e29dfe7835382108ea5cf50ceaad329</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:17</sys_created_on>
+        <sys_id>2229dfe7835382108ea5cf50ceaad339</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:17</sys_updated_on>
+        <value>There are no Salesforce certification exam vouchers available for assignment to the requester. Please add vouchers from the consumables list screen in the asset function.</value>
+        <variable display_value="Short Description">3751fd0e73141300612c273ffff6a7a6</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2e29dfe7835382108ea5cf50ceaad329"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_fields</field>
+        <id>2e29dfe7835382108ea5cf50ceaad329</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:17</sys_created_on>
+        <sys_id>ae29dfe7835382108ea5cf50ceaad338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>assigned_to={{Service Catalog_1.request_item.requested_for.department.dept_head}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_requested_item</field>
+        <id>2e29dfe7835382108ea5cf50ceaad329</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:17</sys_created_on>
+        <sys_id>ea29dfe7835382108ea5cf50ceaad338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>ah_short_description</field>
+        <id>2e29dfe7835382108ea5cf50ceaad329</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:17</sys_created_on>
+        <sys_id>2629dfe7835382108ea5cf50ceaad338</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:17</sys_updated_on>
+        <table>var__m_sys_hub_action_input_af51fd0e73141300612c273ffff6a785</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2e29dfe7835382108ea5cf50ceaad329"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2e29dfe7835382108ea5cf50ceaad329"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Ask For Approval">f8f2e9920b10030085c083eb37673abd</action_type>
+        <action_type_parent display_value="Ask For Approval">bae0a1120b10030085c083eb37673a92</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>301e76a383df42108ea5cf50ceaad36d</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <ui_id>ef240acc-a608-4adb-85f2-fb19412750b5</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=301e76a383df42108ea5cf50ceaad36d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>301e76a383df42108ea5cf50ceaad36d</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>3c1e76a383df42108ea5cf50ceaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <value>approval</value>
+        <variable display_value="Approval Field">01f2e9920b10030085c083eb37673ad8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>301e76a383df42108ea5cf50ceaad36d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>741e76a383df42108ea5cf50ceaad370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">bcf2e9920b10030085c083eb37673acc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>301e76a383df42108ea5cf50ceaad36d</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>b01e76a383df42108ea5cf50ceaad370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <value/>
+        <variable display_value="Due Date">c5f2e9920b10030085c083eb37673af9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>301e76a383df42108ea5cf50ceaad36d</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>fc1e76a383df42108ea5cf50ceaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <value>approval_history</value>
+        <variable display_value="Journal Field">c1f2e9920b10030085c083eb37673ae3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=301e76a383df42108ea5cf50ceaad36d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_conditions</field>
+        <id>301e76a383df42108ea5cf50ceaad36d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>f41e76a383df42108ea5cf50ceaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>ApprovesAnyU[{{Service Catalog_1.request_item.requested_for.department.dept_head}}]OrRejectsAnyU[{{Service Catalog_1.request_item.requested_for.department.dept_head}}]</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>approval_field</field>
+        <id>301e76a383df42108ea5cf50ceaad36d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>f81e76a383df42108ea5cf50ceaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>due_date</field>
+        <id>301e76a383df42108ea5cf50ceaad36d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>341e76a383df42108ea5cf50ceaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{"action":"none","date_type":"actual","date":"{{}}","duration":1,"duration_type":"days","schedule":"","schedule_label":""}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>journal_field</field>
+        <id>301e76a383df42108ea5cf50ceaad36d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>bc1e76a383df42108ea5cf50ceaad36e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>301e76a383df42108ea5cf50ceaad36d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>701e76a383df42108ea5cf50ceaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>301e76a383df42108ea5cf50ceaad36d</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>b81e76a383df42108ea5cf50ceaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f8f2e9920b10030085c083eb37673abd</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=301e76a383df42108ea5cf50ceaad36d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=301e76a383df42108ea5cf50ceaad36d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <generation_source/>
+        <order>13</order>
+        <parent_ui_id>766559ae-e05f-427f-b4bb-cac025021617</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>781e76a383df42108ea5cf50ceaad3a4</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <ui_id>4e1bde59-b3b3-4bd6-92bf-e75bd126b5be</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=781e76a383df42108ea5cf50ceaad3a4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>781e76a383df42108ea5cf50ceaad3a4</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>741e76a383df42108ea5cf50ceaad3a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>781e76a383df42108ea5cf50ceaad3a4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>b01e76a383df42108ea5cf50ceaad3a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <value>state=7</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=781e76a383df42108ea5cf50ceaad3a4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>781e76a383df42108ea5cf50ceaad3a4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>301e76a383df42108ea5cf50ceaad3a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>781e76a383df42108ea5cf50ceaad3a4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>b81e76a383df42108ea5cf50ceaad3a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>781e76a383df42108ea5cf50ceaad3a4</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>7c1e76a383df42108ea5cf50ceaad3a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=781e76a383df42108ea5cf50ceaad3a4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=781e76a383df42108ea5cf50ceaad3a4"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <generation_source/>
+        <order>9</order>
+        <parent_ui_id>4968e9cf-210c-4e86-8ae7-ff4ab0930342</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>a229dfe7835382108ea5cf50ceaad342</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <ui_id>45895a7f-b1f5-4178-b6a3-7b3759c44d9a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a229dfe7835382108ea5cf50ceaad342"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a229dfe7835382108ea5cf50ceaad342</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>6629dfe7835382108ea5cf50ceaad344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:18</sys_updated_on>
+        <value>alm_consumable</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a229dfe7835382108ea5cf50ceaad342</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>a229dfe7835382108ea5cf50ceaad344</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:18</sys_updated_on>
+        <value>model=6bef0fe7837ac2108ea5cf50ceaad3e9^install_status=6^substatus=available</value>
+        <variable display_value="Conditions">d509f99587003300663ca1bb36cb0ba9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3^id=a229dfe7835382108ea5cf50ceaad342"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a229dfe7835382108ea5cf50ceaad342"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a229dfe7835382108ea5cf50ceaad342"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>a21a8a03-538c-42e7-a08c-0fe62017f930</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>b81e76a383df42108ea5cf50ceaad386</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <ui_id>fbe0bd66-2061-42f7-a006-4b44d0ec0e76</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b81e76a383df42108ea5cf50ceaad386"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b81e76a383df42108ea5cf50ceaad386</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>301e76a383df42108ea5cf50ceaad389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <value>model=6bef0fe7837ac2108ea5cf50ceaad3e9^install_status=6^substatus=available</value>
+        <variable display_value="Conditions">d509f99587003300663ca1bb36cb0ba9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b81e76a383df42108ea5cf50ceaad386</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>7c1e76a383df42108ea5cf50ceaad388</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>b81e76a383df42108ea5cf50ceaad386</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>f01e76a383df42108ea5cf50ceaad389</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <value>alm_consumable</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3^id=b81e76a383df42108ea5cf50ceaad386"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b81e76a383df42108ea5cf50ceaad386"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=b81e76a383df42108ea5cf50ceaad386"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <generation_source/>
+        <order>14</order>
+        <parent_ui_id>766559ae-e05f-427f-b4bb-cac025021617</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>f81e76a383df42108ea5cf50ceaad3aa</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <ui_id>386c65a1-8f3a-475c-be32-5b6363e2477b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f81e76a383df42108ea5cf50ceaad3aa"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f81e76a383df42108ea5cf50ceaad3aa</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>341e76a383df42108ea5cf50ceaad3ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <value>state=7</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f81e76a383df42108ea5cf50ceaad3aa</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>f41e76a383df42108ea5cf50ceaad3ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <value>sc_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f81e76a383df42108ea5cf50ceaad3aa"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>f81e76a383df42108ea5cf50ceaad3aa</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>b01e76a383df42108ea5cf50ceaad3ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>f81e76a383df42108ea5cf50ceaad3aa</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>3c1e76a383df42108ea5cf50ceaad3ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>f81e76a383df42108ea5cf50ceaad3aa</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>fc1e76a383df42108ea5cf50ceaad3ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f81e76a383df42108ea5cf50ceaad3aa"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f81e76a383df42108ea5cf50ceaad3aa"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=e01e76a383df42108ea5cf50ceaad31e^sys_idNOT INb41e76a383df42108ea5cf50ceaad3ad,ba29dfe7835382108ea5cf50ceaad38e"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <order>5</order>
+        <parent_ui_id>8c457770-ffdd-464d-b03f-db12eff1b382</parent_ui_id>
+        <subflow display_value="Consume saleforce voucher">6d19a2a7835f42108ea5cf50ceaad37a</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>b41e76a383df42108ea5cf50ceaad3ad</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <ui_id>a4a73257-87e5-4382-a67d-c05592606588</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=b41e76a383df42108ea5cf50ceaad3ad"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>b41e76a383df42108ea5cf50ceaad3ad</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:57</sys_created_on>
+        <sys_id>011e76a383df42108ea5cf50ceaad3dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:57</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">741e76a383df42108ea5cf50ceaad3ae</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b41e76a383df42108ea5cf50ceaad3ad"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>consumable</field>
+        <id>b41e76a383df42108ea5cf50ceaad3ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:57</sys_created_on>
+        <sys_id>011e76a383df42108ea5cf50ceaad3db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6d19a2a7835f42108ea5cf50ceaad37a</table>
+        <value>{{fbe0bd66-2061-42f7-a006-4b44d0ec0e76.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request</field>
+        <id>b41e76a383df42108ea5cf50ceaad3ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:57</sys_created_on>
+        <sys_id>4d1e76a383df42108ea5cf50ceaad3da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6d19a2a7835f42108ea5cf50ceaad37a</table>
+        <value>{{Service Catalog_1.request_item.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>b41e76a383df42108ea5cf50ceaad3ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:57</sys_created_on>
+        <sys_id>c11e76a383df42108ea5cf50ceaad3db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:57</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6d19a2a7835f42108ea5cf50ceaad37a</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>b41e76a383df42108ea5cf50ceaad3ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:57</sys_created_on>
+        <sys_id>8d1e76a383df42108ea5cf50ceaad3db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:57</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_b41e76a383df42108ea5cf50ceaad3ad</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_b41e76a383df42108ea5cf50ceaad3ad^id=b41e76a383df42108ea5cf50ceaad3ad"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=b41e76a383df42108ea5cf50ceaad3ad^sys_idNOT IN741e76a383df42108ea5cf50ceaad3ae"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">b41e76a383df42108ea5cf50ceaad3ad</model>
+        <model_id>b41e76a383df42108ea5cf50ceaad3ad</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_b41e76a383df42108ea5cf50ceaad3ad</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:56</sys_created_on>
+        <sys_id>741e76a383df42108ea5cf50ceaad3ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b41e76a383df42108ea5cf50ceaad3ad"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <attributes/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <order>10</order>
+        <parent_ui_id>4968e9cf-210c-4e86-8ae7-ff4ab0930342</parent_ui_id>
+        <subflow display_value="Consume saleforce voucher">6d19a2a7835f42108ea5cf50ceaad37a</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>ba29dfe7835382108ea5cf50ceaad38e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <ui_id>c6060ff2-282f-4872-b06c-b0b6072a7511</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ba29dfe7835382108ea5cf50ceaad38e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>ba29dfe7835382108ea5cf50ceaad38e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>7a29dfe7835382108ea5cf50ceaad3a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:18</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">7a29dfe7835382108ea5cf50ceaad38f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ba29dfe7835382108ea5cf50ceaad38e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>consumable</field>
+        <id>ba29dfe7835382108ea5cf50ceaad38e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>b229dfe7835382108ea5cf50ceaad39b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6d19a2a7835f42108ea5cf50ceaad37a</table>
+        <value>{{45895a7f-b1f5-4178-b6a3-7b3759c44d9a.Record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>request</field>
+        <id>ba29dfe7835382108ea5cf50ceaad38e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>fe29dfe7835382108ea5cf50ceaad39a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6d19a2a7835f42108ea5cf50ceaad37a</table>
+        <value>{{Service Catalog_1.request_item.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>ba29dfe7835382108ea5cf50ceaad38e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>7629dfe7835382108ea5cf50ceaad39b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_6d19a2a7835f42108ea5cf50ceaad37a</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>ba29dfe7835382108ea5cf50ceaad38e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>f629dfe7835382108ea5cf50ceaad3a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:18</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_ba29dfe7835382108ea5cf50ceaad38e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_ba29dfe7835382108ea5cf50ceaad38e^id=ba29dfe7835382108ea5cf50ceaad38e"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=ba29dfe7835382108ea5cf50ceaad38e^sys_idNOT IN7a29dfe7835382108ea5cf50ceaad38f"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">ba29dfe7835382108ea5cf50ceaad38e</model>
+        <model_id>ba29dfe7835382108ea5cf50ceaad38e</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_ba29dfe7835382108ea5cf50ceaad38e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>7a29dfe7835382108ea5cf50ceaad38f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ba29dfe7835382108ea5cf50ceaad38e"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=e01e76a383df42108ea5cf50ceaad31e^sys_idNOT IN201e76a383df42108ea5cf50ceaad343,6c1e76a383df42108ea5cf50ceaad357,7e29dfe7835382108ea5cf50ceaad369,a01e76a383df42108ea5cf50ceaad354,e01e76a383df42108ea5cf50ceaad363,e41e76a383df42108ea5cf50ceaad360,e629dfe7835382108ea5cf50ceaad365"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">770ef2a383df42108ea5cf50ceaad3ef</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>201e76a383df42108ea5cf50ceaad343</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <ui_id>a21a8a03-538c-42e7-a08c-0fe62017f930</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=201e76a383df42108ea5cf50ceaad343"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>201e76a383df42108ea5cf50ceaad343</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>e01e76a383df42108ea5cf50ceaad353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:55</sys_updated_on>
+        <value>Yes approval</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=201e76a383df42108ea5cf50ceaad343"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>201e76a383df42108ea5cf50ceaad343</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>601e76a383df42108ea5cf50ceaad353</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{ef240acc-a608-4adb-85f2-fb19412750b5.approval_state}}=approved</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>201e76a383df42108ea5cf50ceaad343</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>ac1e76a383df42108ea5cf50ceaad352</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=201e76a383df42108ea5cf50ceaad343"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=201e76a383df42108ea5cf50ceaad343"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f70e36a383df42108ea5cf50ceaad322</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>8c457770-ffdd-464d-b03f-db12eff1b382</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>6c1e76a383df42108ea5cf50ceaad357</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <ui_id>78daa35a-ebd6-4799-8cb0-96381b3290c2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=6c1e76a383df42108ea5cf50ceaad357"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=6c1e76a383df42108ea5cf50ceaad357"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6c1e76a383df42108ea5cf50ceaad357"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">e919dbe7835382108ea5cf50ceaad305</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>11</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>4968e9cf-210c-4e86-8ae7-ff4ab0930342</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>7e29dfe7835382108ea5cf50ceaad369</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <ui_id>a199f42f-708a-43f1-aff0-dd9bc0a44c0e</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7e29dfe7835382108ea5cf50ceaad369"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7e29dfe7835382108ea5cf50ceaad369"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7e29dfe7835382108ea5cf50ceaad369"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">7b0ef2a383df42108ea5cf50ceaad3f6</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a21a8a03-538c-42e7-a08c-0fe62017f930</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>a01e76a383df42108ea5cf50ceaad354</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <ui_id>8c457770-ffdd-464d-b03f-db12eff1b382</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=a01e76a383df42108ea5cf50ceaad354"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>a01e76a383df42108ea5cf50ceaad354</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>201e76a383df42108ea5cf50ceaad357</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:55</sys_updated_on>
+        <value>Having voucher</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a01e76a383df42108ea5cf50ceaad354"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>a01e76a383df42108ea5cf50ceaad354</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>ac1e76a383df42108ea5cf50ceaad356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{fbe0bd66-2061-42f7-a006-4b44d0ec0e76.Record}}ISNOTEMPTY</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>a01e76a383df42108ea5cf50ceaad354</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>e81e76a383df42108ea5cf50ceaad356</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:55</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=a01e76a383df42108ea5cf50ceaad354"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a01e76a383df42108ea5cf50ceaad354"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">3b0e36a383df42108ea5cf50ceaad356</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="End">d176605ea76103004f27b0d2187901c7</logic_definition>
+        <order>15</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>766559ae-e05f-427f-b4bb-cac025021617</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>e01e76a383df42108ea5cf50ceaad363</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:20</sys_updated_on>
+        <ui_id>7a3b454f-7760-4f29-9b90-29a77cab7569</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e01e76a383df42108ea5cf50ceaad363"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e01e76a383df42108ea5cf50ceaad363"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e01e76a383df42108ea5cf50ceaad363"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">b70e36a383df42108ea5cf50ceaad34e</block>
+        <comment/>
+        <connected_to>a21a8a03-538c-42e7-a08c-0fe62017f930</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>12</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>e41e76a383df42108ea5cf50ceaad360</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <ui_id>766559ae-e05f-427f-b4bb-cac025021617</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e41e76a383df42108ea5cf50ceaad360"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e41e76a383df42108ea5cf50ceaad360"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e41e76a383df42108ea5cf50ceaad360"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">f72897a7835382108ea5cf50ceaad3e4</block>
+        <comment/>
+        <connected_to>8c457770-ffdd-464d-b03f-db12eff1b382</connected_to>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Salesforce voucher request">e01e76a383df42108ea5cf50ceaad31e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="Else If">666e5545c3e232002841b63b12d3ae99</logic_definition>
+        <order>7</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>a21a8a03-538c-42e7-a08c-0fe62017f930</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>e629dfe7835382108ea5cf50ceaad365</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:19</sys_updated_on>
+        <ui_id>4968e9cf-210c-4e86-8ae7-ff4ab0930342</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=e629dfe7835382108ea5cf50ceaad365"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>e629dfe7835382108ea5cf50ceaad365</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>fe29dfe7835382108ea5cf50ceaad368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:18</sys_updated_on>
+        <value>Not having voucher</value>
+        <variable display_value="Condition Label">f0af19c1c32632002841b63b12d3aea2</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e629dfe7835382108ea5cf50ceaad365"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>e629dfe7835382108ea5cf50ceaad365</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>7e29dfe7835382108ea5cf50ceaad368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value>{{fbe0bd66-2061-42f7-a006-4b44d0ec0e76.Record}}ISEMPTY</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition_name</field>
+        <id>e629dfe7835382108ea5cf50ceaad365</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 06:39:18</sys_created_on>
+        <sys_id>ba29dfe7835382108ea5cf50ceaad368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:18</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_666e5545c3e232002841b63b12d3ae99</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=e629dfe7835382108ea5cf50ceaad365"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e629dfe7835382108ea5cf50ceaad365"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e01e76a383df42108ea5cf50ceaad31e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e01e76a383df42108ea5cf50ceaad31e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_e01e76a383df42108ea5cf50ceaad31e^sys_idNOT IN2c1e76a383df42108ea5cf50ceaad33b,6c1e76a383df42108ea5cf50ceaad333"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e01e76a383df42108ea5cf50ceaad31e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>2c1e76a383df42108ea5cf50ceaad33b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e01e76a383df42108ea5cf50ceaad31e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:55</sys_created_on>
+        <sys_id>6c1e76a383df42108ea5cf50ceaad333</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 04:40:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e01e76a383df42108ea5cf50ceaad31e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_e01e76a383df42108ea5cf50ceaad31e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e01e76a383df42108ea5cf50ceaad31e"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>fb8da22f835f42108ea5cf50ceaad399</sys_id>
+        <latest_snapshot>e01e76a383df42108ea5cf50ceaad31e</latest_snapshot>
+        <compiler_build>glide-washingtondc-12-20-2023__patch3-hotfix1-05-12-2024_05-16-2024_0813.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=fb8da22f835f42108ea5cf50ceaad399^sys_idNOT IN991eb6a383df42108ea5cf50ceaad34d"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"991eb6a383df42108ea5cf50ceaad34d","name":"plan","plan_signature":null}}</plan>
+        <plan_id>fb8da22f835f42108ea5cf50ceaad399</plan_id>
+        <snapshot>473b5fab835382108ea5cf50ceaad3b7</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-07-16 04:40:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>991eb6a383df42108ea5cf50ceaad34d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-07-16 06:39:22</sys_updated_on>
+        <trigger display_value="">911eb6a383df42108ea5cf50ceaad34d</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=fb8da22f835f42108ea5cf50ceaad399"/>
+</record_update>
